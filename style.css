@@ -1,0 +1,409 @@
+/* MENGATUR SELURUH HALAMAN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DESAIN BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* BAGIAN HEADER */
+header {
+    background-color: #254b87;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* MENU NAVIGASI */
+nav {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav button {
+    background-color: #3976c6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+nav button:hover {
+    background-color: #193d73;
+}
+
+/* BAGIAN KONTEN */
+.halaman {
+    display: none;
+    background-color: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* HALAMAN YANG AKTIF */
+.halaman.aktif {
+    display: block;
+}
+
+/* JUDUL */
+h2 {
+    color: #254b87;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #3976c6;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* RUMUS MATEMATIKA */
+.rumus {
+    background-color: #eaf2ff;
+    color: #254b87;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* DAFTAR LITERASI */
+ol {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #254b87;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* TAMPILAN HP */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav button {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .halaman {
+        margin: 15px;
+        padding: 20px;
+    }
+}
+
+/* TAMPILAN BERANDA */
+.hero {
+    background-color: #eaf2ff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.hero p {
+    margin-bottom: 15px;
+}
+
+.hero button,
+.kartu button {
+    background-color: #254b87;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.hero button:hover,
+.kartu button:hover {
+    background-color: #193d73;
+}
+
+.judul-menu {
+    margin-bottom: 20px;
+}
+
+.kumpulan-kartu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.kartu {
+    background-color: #f5f8ff;
+    border: 1px solid #dce7f8;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.kartu h3 {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .kumpulan-kartu {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* HALAMAN MATERI */
+.halaman hr {
+    border: none;
+    border-top: 1px solid #dce7f8;
+    margin: 25px 0;
+}
+
+.halaman ul {
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.contoh {
+    background-color: #f5f8ff;
+    border-left: 5px solid #3976c6;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.contoh h4 {
+    color: #254b87;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.jawaban {
+    background-color: #e4f5e9;
+    color: #176b37;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* HALAMAN LATIHAN */
+.soal {
+    background-color: #f5f8ff;
+    border: 1px solid #dce7f8;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+.soal h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #254b87;
+}
+
+.soal p {
+    margin-bottom: 18px;
+}
+
+.soal label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #dce7f8;
+    border-radius: 8px;
+    padding: 13px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.soal input[type="radio"] {
+    margin-right: 12px;
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+.soal label:hover {
+    background-color: #eaf2ff;
+    border-color: #3976c6;
+}
+
+#latihan button {
+    background-color: #254b87;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#latihan button:hover {
+    background-color: #193d73;
+}
+
+#hasilLatihan {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+#hasilLatihan .benar {
+    color: #176b37;
+}
+
+#hasilLatihan .salah {
+    color: #b42318;
+}
+
+/* =================================
+   HALAMAN LITERASI MATEMATIKA
+================================= */
+
+#literasi {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#literasi > h2 {
+    color: #254b87;
+    margin-bottom: 15px;
+}
+
+#literasi > p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#literasi .soal {
+    background-color: #ffffff;
+    border: 1px solid #dce7f8;
+    border-left: 5px solid #3976c6;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+#literasi .soal h3 {
+    color: #254b87;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#literasi .soal p,
+#literasi .soal li {
+    line-height: 1.8;
+}
+
+#literasi textarea {
+    display: block;
+    width: 100%;
+    min-height: 130px;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+#literasi textarea:focus {
+    outline: none;
+    border-color: #3976c6;
+    box-shadow: 0 0 0 3px rgba(57, 118, 198, 0.12);
+}
+
+#literasi button {
+    background-color: #254b87;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+#literasi button:hover {
+    background-color: #193d73;
+}
+
+#hasilLiterasi {
+    margin-top: 25px;
+    line-height: 1.8;
+}
+
+#hasilLiterasi h2,
+#hasilLiterasi h3 {
+    color: #254b87;
+}
+
+/* =================================
+   MENGATUR PERGANTIAN HALAMAN
+================================= */
+
+/* Semua halaman disembunyikan dahulu */
+.halaman {
+    display: none;
+}
+
+/* Hanya halaman yang aktif ditampilkan */
+.halaman.aktif {
+    display: block;
+}
+
+/* Mengatur tampilan isi halaman */
+main {
+    max-width: 1160px;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+/* Membuat isi halaman lebih rapi */
+.halaman {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    min-height: 250px;
+}

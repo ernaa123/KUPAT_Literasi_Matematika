@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="id">
+<<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KUPAT - Belajar Matematika</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#254b87">
+</head>
+
+<body>
+
+    <!-- BAGIAN HEADER -->
+    <header>
+        <h1>KUPAT</h1>
+        <p>Kuasai Persamaan Kuadrat</p>
+    </header>
+
+    <!-- BAGIAN NAVIGASI -->
+    <nav>
+        <button onclick="tampilkanHalaman('beranda')">
+            Beranda
+        </button>
+
+        <button onclick="tampilkanHalaman('materi')">
+            Materi
+        </button>
+
+        <button onclick="tampilkanHalaman('latihan')">
+            Latihan
+        </button>
+
+        <button onclick="tampilkanHalaman('literasi')">
+            Literasi Matematika
+        </button>
+    </nav>
+
+    <!-- HALAMAN BERANDA -->
+    
+<section id="beranda" class="halaman aktif">
+
+    <div class="hero">
+        <h2>Selamat Datang di KUPAT!</h2>
+
+        <p>
+            Yuk, belajar matematika dengan cara yang
+            menyenangkan dan mudah dipahami.
+        </p>
+
+        <p>
+            KUPAT (Kuasai Persamaan Kuadrat) merupakan
+            media pembelajaran untuk membantu siswa
+            memahami materi dan mengembangkan
+            kemampuan literasi matematika.
+        </p>
+
+        <button onclick="tampilkanHalaman('materi')">
+            Mulai Belajar
+        </button>
+    </div>
+
+    <h2 class="judul-menu">Apa yang Akan Kamu Pelajari?</h2>
+
+    <div class="kumpulan-kartu">
+
+        <div class="kartu">
+            <h3>📘 Materi</h3>
+            <p>
+                Pelajari konsep Persamaan Kuadrat,
+                pemfaktoran, dan rumus ABC.
+            </p>
+            <button onclick="tampilkanHalaman('materi')">
+                Pelajari
+            </button>
+        </div>
+
+        <div class="kartu">
+            <h3>✏️ Latihan Soal</h3>
+            <p>
+                Uji pemahamanmu melalui latihan
+                soal dan pembahasannya.
+            </p>
+            <button onclick="tampilkanHalaman('latihan')">
+                Mulai Latihan
+            </button>
+        </div>
+
+        <div class="kartu">
+            <h3>🧠 Literasi Matematika</h3>
+            <p>
+                Latih kemampuan bernalar dan
+                menyelesaikan masalah sehari-hari.
+            </p>
+            <button onclick="tampilkanHalaman('literasi')">
+                Mulai Literasi
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+        <h2>Selamat Datang di KUPAT</h2>
+
+        <p>
+            Aplikasi pembelajaran matematika untuk
+            membantu siswa memahami Persamaan Kuadrat
+            dan Literasi Matematika.
+        </p>
+    </section>
+
+    <!-- HALAMAN MATERI -->
+    
+<section id="materi" class="halaman">
+
+    <h2>📘 Materi Persamaan Kuadrat</h2>
+
+    <p>
+        Pada halaman ini, kamu akan mempelajari
+        pengertian, bentuk umum, pemfaktoran,
+        dan rumus ABC.
+    </p>
+
+    <hr>
+
+    <h3>1. Pengertian Persamaan Kuadrat</h3>
+
+    <p>
+        Persamaan kuadrat adalah persamaan matematika
+        yang memiliki pangkat tertinggi variabel
+        berupa dua.
+    </p>
+
+    <p>Contoh:</p>
+
+    <div class="rumus">
+        x² + 5x + 6 = 0
+    </div>
+
+    <h3>2. Bentuk Umum Persamaan Kuadrat</h3>
+
+    <div class="rumus">
+        ax² + bx + c = 0
+    </div>
+
+    <p>Keterangan:</p>
+
+    <ul>
+        <li>a = koefisien x², dengan a ≠ 0</li>
+        <li>b = koefisien x</li>
+        <li>c = konstanta</li>
+        <li>x = variabel</li>
+    </ul>
+
+    <p>
+        Contoh: x² + 5x + 6 = 0
+    </p>
+
+    <ul>
+        <li>a = 1</li>
+        <li>b = 5</li>
+        <li>c = 6</li>
+    </ul>
+
+    <hr>
+
+    <h3>3. Menyelesaikan dengan Pemfaktoran</h3>
+
+    <p>
+        Pemfaktoran dilakukan dengan mencari
+        dua bilangan yang hasil kalinya sama
+        dengan c dan jumlahnya sama dengan b
+        (untuk a = 1).
+    </p>
+
+    <div class="contoh">
+        <h4>Contoh Soal</h4>
+
+        <p>Tentukan penyelesaian dari:</p>
+
+        <div class="rumus">
+            x² + 5x + 6 = 0
+        </div>
+
+        <h4>Langkah 1: Tentukan dua bilangan</h4>
+
+        <p>
+            Kita mencari dua bilangan yang:
+        </p>
+
+        <ul>
+            <li>Hasil kalinya 6</li>
+            <li>Jumlahnya 5</li>
+        </ul>
+
+        <p>
+            Bilangan tersebut adalah 2 dan 3,
+            karena 2 × 3 = 6 dan 2 + 3 = 5.
+        </p>
+
+        <h4>Langkah 2: Bentuk faktornya</h4>
+
+        <div class="rumus">
+            (x + 2)(x + 3) = 0
+        </div>
+
+        <h4>Langkah 3: Tentukan nilai x</h4>
+
+        <p>
+            x + 2 = 0, sehingga x = -2
+        </p>
+
+        <p>
+            x + 3 = 0, sehingga x = -3
+        </p>
+
+        <h4>Jawaban</h4>
+
+        <div class="jawaban">
+            x = -2 atau x = -3
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>4. Menyelesaikan dengan Rumus ABC</h3>
+
+    <p>
+        Rumus ABC dapat digunakan untuk
+        menentukan akar-akar persamaan kuadrat.
+    </p>
+
+    <div class="rumus">
+        x = (-b ± √(b² - 4ac)) / 2a
+    </div>
+
+    <div class="contoh">
+        <h4>Contoh Soal</h4>
+
+        <p>Tentukan akar-akar dari:</p>
+
+        <div class="rumus">
+            x² - 5x + 6 = 0
+        </div>
+
+        <h4>Langkah 1: Tentukan nilai a, b, dan c</h4>
+
+        <ul>
+            <li>a = 1</li>
+            <li>b = -5</li>
+            <li>c = 6</li>
+        </ul>
+
+        <h4>Langkah 2: Masukkan ke rumus ABC</h4>
+
+        <p>
+            x = (-(-5) ± √((-5)² - 4(1)(6))) / 2(1)
+        </p>
+
+        <h4>Langkah 3: Sederhanakan</h4>
+
+        <p>
+            x = (5 ± √(25 - 24)) / 2
+        </p>
+
+        <p>
+            x = (5 ± 1) / 2
+        </p>
+
+        <h4>Langkah 4: Tentukan kedua akar</h4>
+
+        <p>
+            x₁ = (5 + 1) / 2 = 3
+        </p>
+
+        <p>
+            x₂ = (5 - 1) / 2 = 2
+        </p>
+
+        <div class="jawaban">
+            Jadi, akar-akarnya adalah x = 3 dan x = 2.
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>5. Kesimpulan</h3>
+
+    <p>
+        Persamaan kuadrat dapat diselesaikan
+        menggunakan beberapa cara, di antaranya
+        pemfaktoran dan rumus ABC.
+    </p>
+
+    <p>
+        Pilihlah metode yang paling sesuai dengan
+        bentuk persamaan kuadrat yang diberikan.
+    </p>
+
+    <button onclick="tampilkanHalaman('latihan')">
+        Lanjut ke Latihan Soal →
+    </button>
+
+</section>
+        <h2>Materi Persamaan Kuadrat</h2>
+
+        <p>
+            Persamaan kuadrat adalah persamaan
+            matematika yang memiliki pangkat tertinggi dua.
+        </p>
+
+        <h3>Bentuk Umum</h3>
+
+        <p class="rumus">
+            ax² + bx + c = 0
+        </p>
+    </section>
+
+    <!-- HALAMAN LATIHAN -->
+    
+<section id="latihan" class="halaman">
+
+    <h2>✏️ Latihan Soal Persamaan Kuadrat</h2>
+
+    <p>
+        Kerjakan lima soal berikut untuk menguji
+        pemahamanmu. Pilih satu jawaban yang paling tepat.
+    </p>
+
+    <div class="soal">
+        <h3>Soal 1</h3>
+        <p>Manakah yang merupakan persamaan kuadrat?</p>
+
+        <label><input type="radio" name="q1" value="A"> A. 2x + 5 = 0</label>
+        <label><input type="radio" name="q1" value="B"> B. x² + 3x + 2 = 0</label>
+        <label><input type="radio" name="q1" value="C"> C. 3x³ + 2 = 0</label>
+        <label><input type="radio" name="q1" value="D"> D. 5x - 7 = 0</label>
+    </div>
+
+    <div class="soal">
+        <h3>Soal 2</h3>
+        <p>
+            Pada persamaan x² + 5x + 6 = 0,
+            berapakah nilai koefisien b?
+        </p>
+
+        <label><input type="radio" name="q2" value="A"> A. 1</label>
+        <label><input type="radio" name="q2" value="B"> B. 6</label>
+        <label><input type="radio" name="q2" value="C"> C. 5</label>
+        <label><input type="radio" name="q2" value="D"> D. -5</label>
+    </div>
+
+    <div class="soal">
+        <h3>Soal 3</h3>
+        <p>
+            Hasil pemfaktoran dari x² + 5x + 6 = 0 adalah ...
+        </p>
+
+        <label><input type="radio" name="q3" value="A"> A. (x + 1)(x + 6) = 0</label>
+        <label><input type="radio" name="q3" value="B"> B. (x - 2)(x - 3) = 0</label>
+        <label><input type="radio" name="q3" value="C"> C. (x + 2)(x + 3) = 0</label>
+        <label><input type="radio" name="q3" value="D"> D. (x - 1)(x + 6) = 0</label>
+    </div>
+
+    <div class="soal">
+        <h3>Soal 4</h3>
+        <p>
+            Akar-akar dari x² - 5x + 6 = 0 adalah ...
+        </p>
+
+        <label><input type="radio" name="q4" value="A"> A. 2 dan 3</label>
+        <label><input type="radio" name="q4" value="B"> B. -2 dan -3</label>
+        <label><input type="radio" name="q4" value="C"> C. 1 dan 6</label>
+        <label><input type="radio" name="q4" value="D"> D. -1 dan 6</label>
+    </div>
+
+    <div class="soal">
+        <h3>Soal 5</h3>
+        <p>
+            Jika x² - 9 = 0, maka nilai x adalah ...
+        </p>
+
+        <label><input type="radio" name="q5" value="A"> A. 3 saja</label>
+        <label><input type="radio" name="q5" value="B"> B. -3 saja</label>
+        <label><input type="radio" name="q5" value="C"> C. 9 dan -9</label>
+        <label><input type="radio" name="q5" value="D"> D. 3 dan -3</label>
+    </div>
+
+    <button onclick="cekLatihan()">
+        Periksa Jawaban
+    </button>
+
+    <div id="hasilLatihan"></div>
+
+</section>
+        <h2>Latihan Soal</h2>
+
+        <p>
+            Kerjakan latihan soal untuk menguji
+            pemahamanmu tentang Persamaan Kuadrat.
+        </p>
+    </section>
+
+    <!-- HALAMAN LITERASI -->
+    <<section id="literasi-pengantar" class="halaman">
+        <h2>Literasi Matematika</h2>
+
+        <p>
+            Kerjakan soal berdasarkan empat indikator
+            Literasi Matematika.
+        </p>
+
+        <ol>
+            <li>Mathematical Reasoning</li>
+            <li>Formulating Situations Mathematically</li>
+            <li>Employing Mathematical Concepts, Facts, and Procedures</li>
+            <li>Interpreting, Applying, and Evaluating Mathematical Outcomes</li>
+        </ol>
+    </section>
+
+<!-- HALAMAN LITERASI MATEMATIKA -->
+<section id="literasi" class="halaman">
+
+    <h2>📚 Literasi Matematika</h2>
+
+    <p>
+        Selamat datang di latihan Literasi Matematika!
+        Kerjakan empat soal berikut dengan membaca informasi,
+        melakukan perhitungan, dan menuliskan kesimpulan.
+    </p>
+
+  
+<!-- SOAL 1 -->
+<div class="soal">
+    <h3>Soal 1 – Mathematical Reasoning</h3>
+    <h4>Memilih Ukuran Taman</h4>
+
+    <p>
+        Sebuah taman berbentuk persegi panjang memiliki luas
+        84 m². Panjang taman 5 meter lebih besar daripada lebarnya.
+        Berdasarkan informasi tersebut, tentukan pasangan panjang
+        dan lebar taman yang tepat.
+    </p>
+
+    <ul>
+        <li>A. Panjang 12 m dan lebar 7 m</li>
+        <li>B. Panjang 14 m dan lebar 6 m</li>
+        <li>C. Panjang 10,5 m dan lebar 8 m</li>
+    </ul>
+
+    <textarea id="jawaban1"
+        placeholder="Tuliskan informasi, model matematika, proses penyelesaian, pemeriksaan, dan kesimpulan..."></textarea>
+</div>
+
+<!-- SOAL 2 -->
+<div class="soal">
+    <h3>Soal 2 – Formulating Situations Mathematically</h3>
+    <h4>Menentukan Ukuran Tempat Parkir</h4>
+
+    <p>
+        Sebuah tempat parkir berbentuk persegi panjang memiliki
+        luas 180 m². Panjang tempat parkir tersebut 3 meter lebih
+        besar daripada lebarnya.
+    </p>
+
+    <p>
+        Buatlah model matematika dari situasi tersebut, kemudian
+        tentukan ukuran panjang dan lebarnya.
+    </p>
+
+    <textarea id="jawaban2"
+        placeholder="Tuliskan variabel, model matematika, proses penyelesaian, dan kesimpulan..."></textarea>
+</div>
+
+<!-- SOAL 3 -->
+<div class="soal">
+    <h3>Soal 3 – Employing Mathematical Concepts, Facts, and Procedures</h3>
+    <h4>Menentukan Waktu Bola</h4>
+
+    <p>
+        Ketinggian sebuah bola yang dilempar ke atas dinyatakan
+        dengan fungsi h(t) = -5t² + 20t + 25, dengan h(t) dalam
+        meter dan t dalam detik.
+    </p>
+
+    <p>
+        Pada saat tertentu, bola berada pada ketinggian 40 meter.
+        Tentukan waktu ketika bola berada pada ketinggian tersebut.
+    </p>
+
+    <textarea id="jawaban3"
+        placeholder="Tuliskan informasi, persamaan, proses perhitungan, dan kesimpulan..."></textarea>
+</div>
+
+<!-- SOAL 4 -->
+<div class="soal">
+    <h3>Soal 4 – Interpreting, Applying, and Evaluating Mathematical Outcomes</h3>
+    <h4>Menafsirkan Hasil Ukuran Kolam</h4>
+
+    <p>
+        Sebuah kolam renang berbentuk persegi panjang memiliki
+        luas 96 m². Panjang kolam 4 meter lebih besar daripada
+        lebarnya.
+    </p>
+
+    <p>
+        Dari penyelesaian persamaan kuadrat diperoleh dua nilai
+        untuk lebar, yaitu 8 dan -12.
+    </p>
+
+    <p>
+        Jelaskan nilai yang dapat digunakan dalam konteks ukuran
+        kolam, kemudian tentukan panjang kolam dan periksa
+        kebenaran hasilnya.
+    </p>
+
+    <textarea id="jawaban4"
+        placeholder="Tuliskan penafsiran hasil, alasan memilih nilai, perhitungan panjang, pemeriksaan, dan kesimpulan..."></textarea>
+</div>
+
+    <p><b>Skor maksimal: 24 poin</b></p>
+
+    <button onclick="nilaiLiterasi()">
+        Periksa Jawaban Literasi
+    </button>
+
+    <div id="hasilLiterasi"></div>
+
+</section>
+
+    <!-- BAGIAN FOOTER -->
+    <footer>
+        <p>© 2026 KUPAT - Media Pembelajaran Matematika</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
